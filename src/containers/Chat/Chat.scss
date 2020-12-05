@@ -1,0 +1,12 @@
+.private-chat-title {
+  & .private-chat-title-label {
+    position: relative;
+    top: 2px;
+  }
+}
+
+.card-body {
+  & .scrollable-feed {
+    overflow-y: scroll;
+  }
+}

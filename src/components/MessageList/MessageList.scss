@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+.chat-msg {
+  display: flex;
+  padding: 5px 10px;
+
+  &:nth-child(even) {
+    background: $color-accent-light;
+  }
+
+  &:nth-child(odd) {
+    background: $color-accent-dark;
+  }
+
+  &.highlight {
+    background: $color-highlight;
+  }
+
+  & .chat-msg-user {
+    font-weight: bold;
+    margin-right: 16px;
+  }
+
+  & .video-embed {
+    max-width: 100%;
+  }
+}

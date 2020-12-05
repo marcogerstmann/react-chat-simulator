@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.card-body {
+  overflow-y: scroll;
+}
+
+.user-count {
+  background: white;
+}
+
+.user-item {
+  &:hover {
+    cursor: pointer;
+    background: $color-accent-light;
+  }
+
+  &.has-private-messages {
+    font-weight: bold;
+  }
+
+  &.active {
+    background: $color-accent-dark;
+  }
+
+  & .badge {
+    position: relative;
+    bottom: 2px;
+  }
+}
